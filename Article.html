@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabi Conciergerie</title>
+    <script src="https://kit.fontawesome.com/a68170d9d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="Style/Article.css" type="text/css" />
+</head>
+<body>
+
+ 
+
+    <div class="contact-info">
+        <p>Téléphone : +33 6 22 03 90 35 | Email : contact@example.com</p>
+    </div>
+
+    <div class="mobile-menu">
+        <span class="material-symbols-outlined" onclick="toggler()" id="toggler">menu</span>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="menu-container">
+            <a href="index.html" class="logo">
+                <img src="Image/c7af2c19c46b68d9d352071636dcaafb59d20fdd_s2_n3_y2.png" alt="logo">
+                <a class="site-name">GABI<br><span class="Consiergerie">Consiergerie</span></a>
+            </a>
+            <ul class="menu-listing">
+                <li><a href="Notre Conciergerie.html">Notre Conciergerie</a></li>
+                <li><a href="A propos.html">A propos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Article.html">Article</a></li>
+            </ul>
+        </div>
+    </div>
+   
+
+
+    <script>function toggler(){
+        const icon = document.querySelector("#toggler");
+        const menu = document.querySelector('#menu');
+        if(icon.innerHTML.trim() === "menu"){
+            icon.innerHTML = "close";
+            menu.classList.add("show-menu");
+        } else {
+            icon.innerHTML = "menu";
+            menu.classList.remove("show-menu");
+        }
+    }
+
+
+    window.addEventListener('resize', function() {
+        const menu = document.querySelector('#menu');
+        if (window.innerWidth > 810) {
+            menu.classList.remove("show-menu");
+        }
+    });</script>
+</body>
+
+</html>

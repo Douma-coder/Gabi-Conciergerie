@@ -1,0 +1,804 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        overflow-x: hidden; /* Empêcher le défilement horizontal */
+    }
+
+  
+
+    .contact-info {
+        width:  100%;
+        height: 3%;
+        z-index: 999999;
+        background-color: white; /* Couleur de fond blanche */
+        padding: 10px 0; /* Espacement intérieur en haut et en bas */
+        text-align: center; /* Centrer le texte */
+        font-family: 'Playfair Display', serif; /* Utilisation de la même police que le reste */
+        color: #0d5a34; /* Même couleur verte que le menu pour un aspect cohérent */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Légère ombre pour séparer visuellement */
+        position: fixed;
+    }
+    
+    .contact-info p {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+.menu {
+    display: none; /* Cacher le menu par défaut */
+    position: fixed;
+    top: 38px; /* On abaisse le menu de 50px */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0d5a34;
+    
+}
+.container, .menu, .menu-container, .diapo, .wrapper, .Presentationtext {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.menu.show-menu {
+    display: block; /* Afficher le menu lorsque la classe 'show-menu' est ajoutée */
+}
+
+.menu-container {
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: #0d5a34;
+    
+}
+
+.logo {
+    display: flex;
+    width: 60px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo img:hover {
+    color: green;
+}
+
+.site-name {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 0px;
+    color: white;
+}
+
+.site-name:hover {
+    color: green;
+}
+
+.Consiergerie {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.menu-listing {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+.menu-listing a {
+    font-family: "playfair Display", sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 50px;
+}
+
+.menu-listing a:hover {
+    color: green;
+}
+
+.mobile-menu {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background: #0d5a34;
+    z-index: 9999;
+    padding-inline: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined{
+    margin-top: 40px;
+}
+
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+
+}
+
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color : white;
+    font-size: 3em;
+}
+
+#nav-droite{
+    right: 20px;
+
+}
+
+#nav-gauche {
+    left: 20px;
+}
+
+.elements{
+    display: flex;
+    transition: 1s linear;
+    
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img {
+    width: 100%;
+    filter: brightness(80%); /* Assombrit l'image à 50% */
+}
+
+.caption {
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform : translate(-50%, -50%); 
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+    padding: 30px;
+
+}
+
+
+
+.wrapper {
+    position: absolute; /* Permet le positionnement indépendant */
+    top: 150px; /* Ajustez cette valeur pour le positionnement désiré de wrapper */
+    left: 50%;
+    transform: translateX(-50%); /* Centre horizontalement */
+    z-index: 10;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper .wrapper1,
+.wrapper .wrapper2 {
+    padding-top: 100px;
+    display: block; /* Chaque titre occupe une ligne complète */
+    margin-bottom: 20px; /* Espacement entre les deux titres */
+    color: white;
+    font-size: 40px; /* Taille du texte augmentée */
+    line-height: 1.2; /* Hauteur de ligne ajustée */
+    text-transform: uppercase; /* Conversion du texte en majuscules */
+    text-align: center; /* Centrer le texte horizontalement */
+}
+
+.wrapper1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Presentationtext {
+    bottom: 3.4%;
+    text-align: center;
+    margin-top: 4px; /* Ajustez cette valeur pour le bon positionnement */
+    width: 80%;
+    position: relative;
+    z-index: 15;
+    left: 180px;
+}
+
+.Presentationtext .text1, .Presentationtext .text2 {
+    display: block;
+    margin-top: -10px; /* Ajustez cette valeur pour l'espacement correct */
+    color: white;
+    font-size: 20px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.Presentationtext .text1 {
+    margin-bottom: 10px; /* Ajustez cette valeur pour réduire l'espace */
+}
+
+.animated-char {
+    display: inline-block;
+    font-style: normal;
+    padding: 0 0.25em;
+    transform: scale(0) translate3d(0, -2000px, 0);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out; /* Transition pour l'animation */
+}
+
+.animated-char.fly-in-out {
+    animation: fly-in-out 3s ease-in-out forwards; /* Animation unique */
+}
+
+.luxury-concierge-section {
+    display: flex; /* Active Flexbox pour aligner le texte et les images */
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Place le texte et l'image côte à côte */
+    margin: 20px 0; /* Espacement vertical */
+}
+
+.image-container {
+    flex: 1; /* L'image prend une partie de l'espace */
+    margin-right: 20px; /* Ajoute un espace à droite de l'image */
+}
+
+.concierge-image {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    height: auto;
+    object-fit: cover; /* Maintient les proportions de l'image */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre autour de l'image */
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.text-container {
+    flex: 1; /* Le texte prend une autre partie de l'espace */
+    padding-left: 20px; /* Ajoute un espace à gauche du texte */
+}
+
+.text-container h2 {
+    font-family: "playfair Display", sans-serif;
+    font-size: 2em;
+    color: #333;
+    font-weight: 700; /* Consistent font weight */
+    margin-bottom: 20px;
+    text-align: right; /* Align text to match style */
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.text-container p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1;
+    color: #555;
+    font-weight: 400; /* Regular font weight */
+    text-align: left; /* Align text to the left */
+}
+
+.luxury-assistance-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.assistance-text-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.assistance-text-container h2 {
+    font-family: "playfair Display", sans-serif;
+    font-size: 2em;
+    color: #333;
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 20px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.assistance-text-container p {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 400; /* Normal font weight */
+}
+
+.assistance-image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.assistance-image {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    height: auto;
+    object-fit: cover; /* Maintient les proportions de l'image */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre autour de l'image */
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.luxury-time-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f8f8f8; /* Change if needed */
+}
+
+.time-text-container {
+    flex: 1;
+    max-width: 60%; /* Adjust to give room for the image */
+    box-sizing: border-box;
+    padding-right: 20px; /* Space between text and image */
+}
+
+.time-text-container h2 {
+    font-family: "playfair Display", sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: right; /* Align text to match style */
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.time-text-container p {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    line-height: 1;
+    color: #555;
+    font-weight: 400; /* Regular font weight */
+    text-align: left; /* Align text to the left */
+}
+
+.time-image-container {
+    flex: 1;
+    max-width: 40%;
+    padding-left: 0px;
+}
+
+.time-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    margin-left: -20px; /* Utilisez une marge négative pour déplacer l'image vers la gauche */
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+
+.luxury-relation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.relation-text-container {
+    flex: 1;
+    max-width: 55%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.relation-text-container h2 {
+    font-family: "playfair Display", sans-serif;
+    font-size: 2em;
+    color: #333;
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 20px;
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.relation-text-container p {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    font-weight: 400; /* Normal font weight */
+}
+
+.relation-image-container {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.relation-image {
+    width: 100%; /* L'image prend toute la largeur disponible */
+    height: auto;
+    object-fit: cover; /* Maintient les proportions de l'image */
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre autour de l'image */
+    animation: reveal linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: contain 50%;
+}
+
+.Secondary-image {
+    display: block;
+    margin: 0 auto; /* Centre l'image horizontalement */
+    width: 90%; /* Ajustez la largeur si nécessaire */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+    
+}
+
+
+
+
+.containerbottom {
+    width: 100%;
+    height: 20%;
+    background-color: #0d5a34;
+    position: absolute;
+    bottom: -400%;
+
+
+}
+/* Styles de base pour les images responsive */
+.responsive-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+
+.containerbottom {
+    width: 100%;
+    height: 20%;
+    background-color: #0d5a34;
+    position: absolute;
+    bottom: -640%;
+
+
+}
+
+
+.containerbottom {
+    display: flex;
+    justify-content: center; /* This will center the buttons horizontally */
+    align-items: center; /* This will center the buttons vertically */
+    height: 50%; /* Make sure this is set if you want vertical centering */
+    background-color: #0d5a34;
+}
+
+
+.containerbottom .button {
+    display: inline-block;
+    margin: 0 5px;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: width 0.1s ease; /* Animation de transition pour l'élargissement */
+    overflow: hidden; /* Masque tout ce qui dépasse les dimensions du bouton */
+}
+
+.containerbottom .button:hover {
+    width: 200px; /* Largeur augmentée au survol */
+}
+
+.containerbottom .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    line-height: 60px;
+    transition: color 0.1s ease; /* Transition douce pour la couleur */
+}
+
+.containerbottom .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.containerbottom .button span {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+opacity: 0; /* Cache le texte au départ */
+    transition: opacity 0.1s ease 0.1; /* Transition pour l'affichage du texte après l'agrandissement */
+    white-space: nowrap; /* Empêche le texte de se casser sur plusieurs lignes */
+}
+
+.containerbottom .button:hover span {
+    opacity: 1; /* Affiche le texte au survol */
+}
+
+.mentioncontainer{
+    margin-top: 250px;
+    margin-left: -160px;
+
+}
+
+.buttonmention{
+    color: black;
+}
+
+#particles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   z-index: -1;
+   overflow: hidden;
+  }
+
+
+
+@keyframes fly-in-out {
+    0% {
+        transform: scale(0) translate3d(0, -1000px, 0);
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 100px 100px rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+    }
+    15%,
+    85% {
+        color: rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        transform: scale(1) translate3d(0, 0, 0);
+        background: transparent;
+        box-shadow: none;
+    }
+    100% {
+        color: rgba(255, 255, 255, 1); /* Maintenir la couleur à la fin */
+        transform: scale(1) translate3d(0, 0, 0);
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 810px) {
+    .menu {
+        display: none; /* Cacher le menu complet en-dessous de 810px */
+    }
+
+    .menu.show-menu {
+        display: block; /* Afficher le menu complet lorsqu'on ajoute la classe 'show-menu' */
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-listing {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-listing li {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .menu-listing a {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 811px) {
+    .mobile-menu {
+        display: none; /* Cacher le menu mobile */
+    }
+
+    .menu {
+        display: block; /* Afficher le menu complet */
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .Presentationtext .text1 {
+        margin-bottom: 60px; /* Réduire l'espace en bas du premier texte */
+    }
+    
+    .Presentationtext .text2 {
+        margin-top: -5px; /* Réduire l'espace en haut du deuxième texte */
+    }
+
+
+    .Presentationtext .text1, .Presentationtext .text2 {
+        display: block;
+        margin-top: -60px; /* Ajustez cette valeur pour l'espacement correct */
+        color: white;
+        font-size: 10px;
+        animation: reveal linear;
+        animation-timeline: view();
+        animation-range-start: cover 0%;
+        animation-range-end: contain 50%;
+    }
+    
+    .Presentationtext {
+        padding-bottom: 0;
+        left: 0;
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Éléments centraux sans déborder */
+    .menu-container, .menu-listing, .wrapper {
+        width: 100%;
+    }
+
+    /* Ajustez également la taille de l'image dans les conteneurs */
+    .concierge-image {
+        width: 100%;
+    }
+  
+   
+   
+    menu {
+      
+        display: none; /* Toujours cacher le menu par défaut, même en petit écran */
+    }
+
+    .menu.show-menu {
+        display: block; /* Afficher le menu si show-menu est actif */
+    }
+
+    .menu-container {
+        padding-top: 100px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-listing {
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-listing li {
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .menu-listing a {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 80px;
+        margin-bottom: 20px;
+    }
+
+    .mobile-menu {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        padding-inline: 20px;
+        background: #0d5a34;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .material-symbols-outlined {
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Adjust the wrapper text */
+    .wrapper .wrapper1,
+    .wrapper .wrapper2 {
+        font-size: 15px;
+        margin-top: -120px;
+    }
+
+   
+    .Secondary-image {
+            display: block;
+            margin: 0 auto; /* Centre l'image horizontalement */
+            width: 90%; /* Facultatif : ajustez la largeur selon vos besoins */
+            height: auto; /* Assure que l'image garde ses proportions */
+        }
+    
+}
+
+
+
+
+
+@keyframes reveal {
+   from {
+    transform: scale(0);
+    opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1450px) {
+    .Secondary-image {
+        left: 70px;
+    }
+
+
+}
