@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+
 
 
     * {
@@ -761,7 +759,7 @@ button:hover {
 
         #bottom-arrow {
             display: block;
-            margin: -20% auto 0; /* Centre le bouton et ajoute un espace au-dessus */
+            margin: -10% auto 0; /* Centre le bouton et ajoute un espace au-dessus */
             font-size: 2rem; /* Taille de l'icône */
          
         }
