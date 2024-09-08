@@ -756,7 +756,7 @@ button:hover {
 
         #bottom-arrow {
             display: block;
-            margin: -10% auto 0; /* Centre le bouton et ajoute un espace au-dessus */
+            margin: -20% auto 0; /* Centre le bouton et ajoute un espace au-dessus */
             font-size: 2rem; /* Taille de l'icône */
          
         }
