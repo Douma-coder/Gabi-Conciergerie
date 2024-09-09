@@ -790,7 +790,40 @@ opacity: 0; /* Cache le texte au départ */
 
 }
 
+@media (max-width: 417px) {
 
+    .contact-info p {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    .wrapper .wrapper1,
+    .wrapper .wrapper2 {
+
+         margin-top: -60px;
+         font-size: 15px;
+         padding-bottom: 40px;
+
+}
+    
+}
+    
+
+
+@media (max-width: 410px) {
+
+    .contact-info p {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+
+    
+
+
+
+}
+  
 
 @keyframes reveal {
    from {
