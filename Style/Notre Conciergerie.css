@@ -432,7 +432,9 @@
     
     }
 
-
+ .box ul {
+        List-style-type: none; /* Removes the default bullets */
+    }
 
 
 .box.show {
