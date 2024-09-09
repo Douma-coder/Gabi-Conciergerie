@@ -140,7 +140,7 @@ align-items: center;
 }
 
 .material-symbols-outlined{
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 .ImagePresentation {
@@ -550,6 +550,16 @@ filter: brightness(60%); /*Assombrir l'image*/
  
 }
 
+
+
+@media (max-width: 430px) {
+
+.contact-info p {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+}
 
 
 
