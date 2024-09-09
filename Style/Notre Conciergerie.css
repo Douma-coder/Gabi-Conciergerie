@@ -798,6 +798,15 @@ button:hover {
         
 }
 
+@media (max-width: 430px) {
+
+.contact-info p {
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+}
+
 
     
     @keyframes reveal {
