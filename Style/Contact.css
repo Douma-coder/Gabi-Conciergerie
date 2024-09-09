@@ -437,6 +437,34 @@ body {
 
 }
 
+@media (max-width: 417px) {
+
+    .contact-info p {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+
+    
+}
+    
+
+
+@media (max-width: 410px) {
+
+    .contact-info p {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+
+    
+
+
+
+}
+
+
 @keyframes reveal {
    from {
     transform: scale(0);
