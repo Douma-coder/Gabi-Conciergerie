@@ -564,6 +564,30 @@ filter: brightness(60%); /*Assombrir l'image*/
 
 
 
+@media (max-width: 410px) {
+
+    .contact-info p {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+
+    .wrapper .wrapper1,
+    .wrapper .wrapper2 {
+
+         margin-top: -60px;
+         font-size: 15px;
+         padding-bottom: 40px;
+
+}
+    
+
+
+
+}
+    
+
+
 
 
 @media (min-width: 811px) {
